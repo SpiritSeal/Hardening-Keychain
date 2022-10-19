@@ -1,0 +1,3 @@
+[submodule "Windows/WinScripts"]
+	path = Windows/WinScripts
+	url = https://github.com/BASIS-Scottsdale-Cyberpatriot-Team/WinScripts

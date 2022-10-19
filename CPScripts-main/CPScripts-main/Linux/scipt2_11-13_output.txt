@@ -1,0 +1,446 @@
+1. Firewall, 2. Files+Software, 3. Passwords, 4. Users, 5. Update, 6. Prequisites!, 7. Extras (CIS)
+What do you want to do?7
+rmmod: ERROR: Module cramfs is not currently loaded
+rmmod: ERROR: Module freevxfs is not currently loaded
+rmmod: ERROR: Module jffs2 is not currently loaded
+rmmod: ERROR: Module hfs is not currently loaded
+rmmod: ERROR: Module hfsplus is not currently loaded
+rmmod: ERROR: Module udf is not currently loaded
+'/usr/share/systemd/tmp.mount' -> '/etc/systemd/system/tmp.mount'
+The unit files have no installation config (WantedBy=, RequiredBy=, Also=,
+Alias= settings in the [Install] section, and DefaultInstance= for template
+units). This means they are not meant to be enabled using systemctl.
+ 
+Possible reasons for having this kind of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/ or .requires/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+Failed to start tmp.mount: Unit tmp.mount has a bad unit file setting.
+See system logs and 'systemctl status tmp.mount' for details.
+'tmpfs /dev/shm tmpfs defaults,noexec,nodev,nosuid,seclabel 0 0' >> /etc/fstab
+mount: /home: mount point not mounted or bad option.
+Failed to disable unit: Unit file autofs.service does not exist.
+install: cannot stat 'usb-storage': No such file or directory
+rmmod: ERROR: Module usb_storage is not currently loaded
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+aide is already the newest version (0.16.1-1build2).
+aide-common is already the newest version (0.16.1-1build2).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Running aide --init...
+Start timestamp: 2021-11-13 13:09:26 -0700 (AIDE 0.16.1)
+AIDE initialized database at /var/lib/aide/aide.db.new
+Verbose level: 6
+
+Number of entries:	219485
+
+---------------------------------------------------
+The attributes of the (uncompressed) database(s):
+---------------------------------------------------
+
+/var/lib/aide/aide.db.new
+  RMD160   : chjq/dBZu9zo3rolycGCtWtU4xE=
+  TIGER    : 6Aj29KRqJtYGbAywBtfi3vZ8oGxK+wG4
+  SHA256   : cVFSLSUlbDaTbt35/9BOJdrQ8tnhw9zS
+             83BvDvQN2V8=
+  SHA512   : i5btEofg4op3wFpd7hGxzmnCieVQMHnb
+             XqRHCiRpCN6esxn2e01SW5jTjWvDMZim
+             N/qIQbO5nUUCEvSuoDkFxA==
+  CRC32    : RozErg==
+  HAVAL    : Yjw9Ga5S4N8apYGrgmej+VJ8hU5TVBrt
+             kNeujaOg+XI=
+  GOST     : pTrHg70pdST1YWRx59hJdzSvtOyq7Jgl
+             8yZtceglWKI=
+
+
+End timestamp: 2021-11-13 13:12:35 -0700 (run time: 3m 9s)
+Overwrite /var/lib/aide/aide.db [yN]? y
+sed: -e expression #1, char 1: unknown command: `''
+sed: -e expression #1, char 1: unknown command: `''
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'prelink' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+apparmor is already the newest version (2.13.3-7ubuntu5.1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+"GRUB_CMDLINE_LINUX="apparmor=1 security=apparmor"" >> /etc/default/grub
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.11.0-40-generic
+Found initrd image: /boot/initrd.img-5.11.0-40-generic
+Found linux image: /boot/vmlinuz-5.11.0-27-generic
+Found initrd image: /boot/initrd.img-5.11.0-27-generic
+Found memtest86+ image: /boot/memtest86+.elf
+Found memtest86+ image: /boot/memtest86+.bin
+done
+rm: cannot remove '/etc/motd': No such file or directory
+chown: cannot access '/etc/motd': No such file or directory
+chmod: cannot access '/etc/motd': No such file or directory
+"Authorized uses only. All activity may be monitored and reported." > /etc/issue.net
+"Authorized uses only. All activity may be monitored and reported." > /etc/issue
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'gdm3' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+touch: cannot touch '/etc/gdm3/greeter.dconf-defaults': No such file or directory
+'[org/gnome/login-screen] banner-message-enable=true banner-message-text='<banner message>' disable-user-list=true' >> /etc/gdm3/greeter.dconf-defaults
+dpkg-query: package 'gdm3' is not installed and no information is available
+Use dpkg --info (= dpkg-deb --info) to examine archive files.
+/usr/sbin/dpkg-reconfigure: gdm3 is not installed
+touch: cannot touch '/etc/gdm3/greeter.dconf-defaults': No such file or directory
+'[org/gnome/login-screen] banner-message-enable=true banner-message-text='<banner message>' disable-user-list=true' >> /etc/gdm3/greeter.dconf-defaults
+dpkg-query: package 'gdm3' is not installed and no information is available
+Use dpkg --info (= dpkg-deb --info) to examine archive files.
+/usr/sbin/dpkg-reconfigure: gdm3 is not installed
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+chrony is already the newest version (3.5-6ubuntu6.2).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting 'xserver-xorg-input-all' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-dummy' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-418-server' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-synaptics' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-r128' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-qxl' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-libinput-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-vesa' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-joystick-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-libinput-dev-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-vmware-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nouveau' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-amdgpu' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-mtrack-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-core' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-intel-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-390' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-core-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-wacom-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-418' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-430' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-435' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-440' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-450' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-455' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-460' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-465' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-470' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-495' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-synaptics-dev-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-multitouch' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-void' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-kbd' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-evdev-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-440-server' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nouveau-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-fbdev' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-legacy-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-evtouch' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-dev-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-all-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-radeon-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-libinput' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-legacy' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-dummy-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-460-server' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-openchrome-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-libinput-dev' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-450-server' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-ati-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-wacom' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-mtrack' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-vmmouse' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-joystick' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-qxl-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-nvidia-470-server' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-joystick-dev-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-vesa-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-mach64' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-xwiimote' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-evdev-dev-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-intel' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-evdev-dbg' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-evdev-dev' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-driver-all' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-vmware' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-amdgpu-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-evdev' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-dev' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-all' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-ati' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-modesetting' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-synaptics-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-synaptics-dev' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-radeon' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-all-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-evdev-hwe-18.04-dbg' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-mouse' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-mga' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-fbdev-hwe-18.04' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-input-joystick-dev' for glob 'xserver-xorg*'
+Note, selecting 'xserver-xorg-video-openchrome' for glob 'xserver-xorg*'
+Package 'xserver-xorg-input-vmmouse' is not installed, so not removed
+Package 'xserver-xorg-input-evtouch' is not installed, so not removed
+Note, selecting 'xserver-xorg-core' instead of 'xserver-xorg-video-modesetting'
+Package 'xserver-xorg-driver-all' is not installed, so not removed
+Package 'xserver-xorg-video-r128' is not installed, so not removed
+Package 'xserver-xorg-video-mach64' is not installed, so not removed
+Package 'xserver-xorg' is not installed, so not removed
+Package 'xserver-xorg-input-all' is not installed, so not removed
+Package 'xserver-xorg-input-libinput' is not installed, so not removed
+Package 'xserver-xorg-input-libinput-dev' is not installed, so not removed
+Package 'xserver-xorg-input-wacom' is not installed, so not removed
+Package 'xserver-xorg-video-all' is not installed, so not removed
+Package 'xserver-xorg-video-amdgpu' is not installed, so not removed
+Package 'xserver-xorg-video-ati' is not installed, so not removed
+Package 'xserver-xorg-video-dummy' is not installed, so not removed
+Package 'xserver-xorg-video-fbdev' is not installed, so not removed
+Package 'xserver-xorg-video-intel' is not installed, so not removed
+Package 'xserver-xorg-video-nouveau' is not installed, so not removed
+Package 'xserver-xorg-video-qxl' is not installed, so not removed
+Package 'xserver-xorg-video-radeon' is not installed, so not removed
+Package 'xserver-xorg-video-vesa' is not installed, so not removed
+Package 'xserver-xorg-video-vmware' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-418' is not installed, so not removed
+Package 'xserver-xorg-core-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-dev-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-all-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-evdev' is not installed, so not removed
+Package 'xserver-xorg-input-evdev-dbg' is not installed, so not removed
+Package 'xserver-xorg-input-evdev-dev' is not installed, so not removed
+Package 'xserver-xorg-input-evdev-dev-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-evdev-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-evdev-hwe-18.04-dbg' is not installed, so not removed
+Package 'xserver-xorg-input-joystick' is not installed, so not removed
+Package 'xserver-xorg-input-joystick-dev' is not installed, so not removed
+Package 'xserver-xorg-input-joystick-dev-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-joystick-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-kbd' is not installed, so not removed
+Package 'xserver-xorg-input-libinput-dev-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-libinput-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-mouse' is not installed, so not removed
+Package 'xserver-xorg-input-mtrack' is not installed, so not removed
+Package 'xserver-xorg-input-mtrack-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-multitouch' is not installed, so not removed
+Package 'xserver-xorg-input-synaptics' is not installed, so not removed
+Package 'xserver-xorg-input-synaptics-dev' is not installed, so not removed
+Package 'xserver-xorg-input-synaptics-dev-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-synaptics-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-void' is not installed, so not removed
+Package 'xserver-xorg-input-wacom-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-input-xwiimote' is not installed, so not removed
+Package 'xserver-xorg-legacy-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-all-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-amdgpu-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-ati-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-dummy-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-fbdev-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-intel-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-mga' is not installed, so not removed
+Package 'xserver-xorg-video-nouveau-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-openchrome' is not installed, so not removed
+Package 'xserver-xorg-video-openchrome-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-qxl-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-radeon-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-vesa-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-video-vmware-hwe-18.04' is not installed, so not removed
+Package 'xserver-xorg-core' is not installed, so not removed
+Package 'xserver-xorg-dev' is not installed, so not removed
+Package 'xserver-xorg-legacy' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-390' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-430' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-435' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-440' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-450' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-450-server' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-455' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-460' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-465' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-470' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-470-server' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-495' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-418-server' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-440-server' is not installed, so not removed
+Package 'xserver-xorg-video-nvidia-460-server' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Failed to stop avahi-daaemon.service: Unit avahi-daaemon.service not loaded.
+Failed to stop avahi-daemon.socket: Unit avahi-daemon.socket not loaded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'avahi-daemon' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'cups' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'isc-dhcp-server' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'slapd' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'nfs-kernel-server' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'bind9' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'vsftpd' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'apache2' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'dovecot-imapd' is not installed, so not removed
+Package 'dovecot-pop3d' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'samba' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'squid' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'snmpd' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'rsync' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'nis' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'rsh-client' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'talk' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'telnet' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'ldap-utils' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'rpcbind' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'iptables-persistent' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+Default routed policy changed to 'deny'
+(be sure to update your rules accordingly)
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+auditd is already the newest version (1:2.8.5-2ubuntu6).
+audispd-plugins is already the newest version (1:2.8.5-2ubuntu6).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Synchronizing state of auditd.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable auditd
+'-a always,exit -F arch=b32 -S adjtimex -S settimeofday -S stime -k time- change -a always,exit -F arch=b32 -S clock_settime -k time-change -w /etc/localtime -p wa -k time-change' > /etc/audit/rules.d/50-time-change.rules
+'-w /etc/group -p wa -k identity -w /etc/passwd -p wa -k identity -w /etc/gshadow -p wa -k identity -w /etc/security/opasswd -p wa -k identity -w /etc/security/opasswd -p wa -k identity' > /etc/audit/rules.d/50-identity.rules
+'-a always,exit -F arch=b64 -S sethostname -S setdomainname -k system-locale -a always,exit -F arch=b32 -S sethostname -S setdomainname -k system-locale -w /etc/issue -p wa -k system-locale -w /etc/issue.net -p wa -k system-locale -w /etc/hosts -p wa -k system-locale -w /etc/network -p wa -k system-locale' > /etc/audit/rules.d/50-system-locale.rules
+'-w /etc/apparmor/ -p wa -k MAC-policy -w /etc/apparmor.d/ -p wa -k MAC-policy' > /etc/audit/rules.d/50-MAC-policy.rules
+'-w /var/log/faillog -p wa -k logins -w /var/log/lastlog -p wa -k logins -w /var/log/tallylog -p wa -k logins' > /etc/audit/rules.d/50-logins.rules
+'-w /var/run/utmp -p wa -k session -w /var/log/wtmp -p wa -k logins -w /var/log/btmp -p wa -k logins' > /etc/audit/rules.d/50-session.rules
+'-a always,exit -F arch=b64 -S chmod -S fchmod -S fchmodat -F auid>=1000 -F auid!=4294967295 -k perm_mod -a always,exit -F arch=b32 -S chmod -S fchmod -S fchmodat -F auid>=1000 -F auid!=4294967295 -k perm_mod -a always,exit -F arch=b64 -S chown -S fchown -S fchownat -S lchown -F auid>=1000 -F auid!=4294967295 -k perm_mod -a always,exit -F arch=b32 -S chown -S fchown -S fchownat -S lchown -F auid>=1000 -F auid!=4294967295 -k perm_mod -a always,exit -F arch=b64 -S setxattr -S lsetxattr -S fsetxattr -S removexattr -S lremovexattr -S fremovexattr -F auid>=1000 -F auid!=4294967295 -k perm_mod -a always,exit -F arch=b32 -S setxattr -S lsetxattr -S fsetxattr -S removexattr -S lremovexattr -S fremovexattr -F auid>=1000 -F auid!=4294967295 -k perm_mod' > /etc/audit/rules.d/50-perm_mod.rules
+'-a always,exit -F arch=b64 -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EACCES -F auid>=1000 -F auid!=4294967295 -k access -a always,exit -F arch=b32 -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EACCES -F auid>=1000 -F auid!=4294967295 -k access -a always,exit -F arch=b64 -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EPERM -F auid>=1000 -F auid!=4294967295 -k access -a always,exit -F arch=b32 -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EPERM -F auid>=1000 -F auid!=4294967295 -k access' > /etc/audit/rules.d/50-access.rules
+'-a always,exit -F arch=b64 -S mount -F auid>=1000 -F auid!=4294967295 -k mounts -a always,exit -F arch=b32 -S mount -F auid>=1000 -F auid!=4294967295 -k mounts' > /etc/audit/rules.d/50-mounts.rules
+'-a always,exit -F arch=b64 -S unlink -S unlinkat -S rename -S renameat -F auid>=1000 -F auid!=4294967295 -k delete -a always,exit -F arch=b32 -S unlink -S unlinkat -S rename -S renameat -F auid>=1000 -F auid!=4294967295 -k delete' > /etc/audit/rules.d/50-delete.rules
+'-w /etc/sudoers -p wa -k scope -w /etc/sudoers.d/ -p wa -k scope' > /etc/audit/rules.d/50-scope.rules
+"-a always,exit -F arch=b64 -C euid!=uid -F euid=0 -Fauid>=1000 -F auid!=4294967295 -S execve -k actions -a always,exit -F arch=b32 -C euid!=uid -F euid=0 -Fauid>=1000 -F auid!=4294967295 -S execve -k actions" > /etc/audit/rules.d/50-actions.rules
+'-w /sbin/insmod -p x -k modules -w /sbin/rmmod -p x -k modules -w /sbin/modprobe -p x -k modules -a always,exit -F arch=b32 -S init_module -S delete_module -k modules' > /etc/audit/rules.d/50-modules.rules
+'-e 2' > /etc/audit/rules.d/99-finalize.rules
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+rsyslog is already the newest version (8.2001.0-1ubuntu1.1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Synchronizing state of rsyslog.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable rsyslog
+find: In ‘-exec ... {} +’ the ‘{}’ must appear by itself, but you specified ‘"{}"’
+Synchronizing state of cron.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable cron
+rm: cannot remove '/etc/cron.deny': No such file or directory
+rm: cannot remove '/etc/at.deny': No such file or directory
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+sudo is already the newest version (1.8.31-1ubuntu1.2).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+'Defaults use_pty' >> /etc/sudoers
+chown: cannot access '/etc/ssh/sshd_config': No such file or directory
+chmod: cannot access '/etc/ssh/sshd_config': No such file or directory
+find: missing argument to `-exec'
+find: missing argument to `-exec'
+find: missing argument to `-exec'
+find: missing argument to `-exec'
+usermod: no changes
