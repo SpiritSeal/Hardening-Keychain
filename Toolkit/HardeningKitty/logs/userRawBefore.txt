@@ -1,0 +1,38 @@
+[*] 10/22/2022 5:17:04 PM - Starting HardeningKitty
+[*] 10/22/2022 5:17:04 PM - Getting machine information
+[*] Hostname: HAWKINS
+[*] Domain: WORKGROUP
+[*] Domain role: StandaloneServer
+[*] Install date: 10/29/2020 13:10:35
+[*] Last Boot Time: 10/22/2022 15:30:34
+[*] Uptime: 01:46:29.9031289
+[*] Windows: Windows Server 2019 Standard
+[*] Windows edition: ServerStandard
+[*] Windows version: 1809
+[*] Windows build: 17763.1.amd64fre.rs5_release.180914-1434
+[*] System-locale: en-US
+[*] Powershell Version: 5.1
+[*] 10/22/2022 5:17:10 PM - Getting user information
+[*] Username: HAWKINS\eleven
+[*] Is Admin: True
+[*] 10/22/2022 5:17:10 PM - Starting Category Administrative Templates: Control Panel
+ID 19.1.3.1, Enable screen saver, Result=, Recommended=1, Severity=Medium
+ID 19.1.3.2, Force specific screen saver: Screen saver executable name, Result=, Recommended=scrnsave.scr, Severity=Medium
+ID 19.1.3.3, Password protect the screen saver, Result=, Recommended=1, Severity=Medium
+ID 19.1.3.4, Screen saver timeout, Result=, Recommended=900, Severity=Medium
+[*] 10/22/2022 5:17:10 PM - Starting Category Administrative Templates: Start Menu and Taskbar
+ID 19.5.1.1, Notifications: Turn off toast notifications on the lock screen, Result=0, Recommended=1, Severity=Medium
+[*] 10/22/2022 5:17:10 PM - Starting Category Administrative Templates: System
+ID 19.6.6.1.1, Internet Communication Management: Internet Communication Settings: Turn off Help Experience Improvement Program, Result=0, Recommended=1, Severity=Medium
+[*] 10/22/2022 5:17:10 PM - Starting Category Administrative Templates: Windows Components
+ID 19.7.4.1, Attachment Manager: Do not preserve zone information in file attachments, Result=, Recommended=2, Severity=Medium
+ID 19.7.4.2, Attachment Manager: Notify antivirus programs when opening attachments, Result=, Recommended=3, Severity=Medium
+ID 19.7.8.1, Cloud Content: Configure Windows spotlight on lock screen, Result=, Recommended=2, Severity=Medium
+ID 19.7.8.2, Cloud Content: Do not suggest third-party content in Windows spotlight, Result=0, Recommended=1, Severity=Medium
+ID 19.7.8.3, Cloud Content: Do not use diagnostic data for tailored experiences, Result=0, Recommended=1, Severity=Medium
+ID 19.7.8.4, Cloud Content: Turn off all Windows spotlight features, Result=0, Recommended=1, Severity=Medium
+ID 19.7.28.1, Network Sharing: Prevent users from sharing files within their profile, Result=0, Recommended=1, Severity=Medium
+ID 19.7.43.1, Windows Installer: Always install with elevated privileges, Result=1, Recommended=0, Severity=Medium
+ID 19.7.47.2.1, Windows Media Player: Playback: Prevent Codec Download, Result=, Recommended=1, Severity=Medium
+[*] 10/22/2022 5:17:10 PM - HardeningKitty is done
+[*] 10/22/2022 5:17:10 PM - Your HardeningKitty score is: 1. HardeningKitty Statistics: Total checks: 15 - Passed: 0, Low: 0, Medium: 15, High: 0.
