@@ -1,4 +1,4 @@
 # Hardening KeyChain
-A series of hardening toolkits and scripts prepared for a certain Cybersecurity Competition, which will not be named to reduce SEO. 
+A series of hardening toolkits and scripts prepared for blue-team Cybersecurity Competitions. 
 
-I kindly ask fellow competitors to please avoid using the custom Powershell scripts in this repo without permission. For the 3rd party tools packaged in here, their original software licenses still apply.
+The original software licenses of the portable 3rd party executable tools still apply.
